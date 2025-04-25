@@ -44,6 +44,28 @@ packages:
   gitUsername: Karthik-V-IBM-10
   gitBranch: main
 services:
+- serviceName: project.siqa_2504.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections:Database_1
+  packages:
+  - name: SIQA_2504Project
+    version: "1.0"
+  - name: JMS2waySSL
+    version: "1.0"
+  - name: SSL_JDBC_Test
+    version: "1.0"
+  - name: DADA_GlobalVariable1
+    version: "1.0"
+  - name: JMSTest
+    version: "1.0"
+  - name: SIQAJDBCAdapterTests
+    version: "1.0"
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
+  - name: WmSalesforceProvider
+    version: 10.7.0.0.53
+  - name: SIQACloudStreamsTests
+    version: "1.0"
 - serviceName: project.siqa_2504.integrations:JMSFlowTest
   packages:
   - name: SIQA_2504Project
@@ -174,3 +196,76 @@ services:
     version: 10.7.0.0.53
   - name: SIQACloudStreamsTests
     version: "1.0"
+- serviceName: project.siqa_2504.integrations:test
+  packages:
+  - name: SIQA_2504Project
+    version: "1.0"
+  - name: JMS2waySSL
+    version: "1.0"
+  - name: SSL_JDBC_Test
+    version: "1.0"
+  - name: DADA_GlobalVariable1
+    version: "1.0"
+  - name: JMSTest
+    version: "1.0"
+  - name: SIQAJDBCAdapterTests
+    version: "1.0"
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
+  - name: WmSalesforceProvider
+    version: 10.7.0.0.53
+  - name: SIQACloudStreamsTests
+    version: "1.0"
+- serviceName: pub.globalVariable:getGlobalVariable
+  packages:
+  - name: WmPublic
+    version: 11.1.0.0.2048
+configurationVariables:
+  ? artConnection.SIQA_2504Project.project.siqa_2504.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.heartBeatInterval
+  : "0"
+  ? artConnection.SIQA_2504Project.project.siqa_2504.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.dbType
+  : ORACLE
+  ? artConnection.SIQA_2504Project.project.siqa_2504.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.keyStore
+  : ""
+  ? artConnection.SIQA_2504Project.project.siqa_2504.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.blockingTimeout
+  : "1000"
+  ? artConnection.SIQA_2504Project.project.siqa_2504.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.databaseName
+  : ORCL
+  ? artConnection.SIQA_2504Project.project.siqa_2504.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.otherProperties
+  : driverType=thin;
+  ? artConnection.SIQA_2504Project.project.siqa_2504.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.startupBackoffSecs
+  : "10"
+  ? artConnection.SIQA_2504Project.project.siqa_2504.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.serverName
+  : adapter-oracle-121-on-amazonrds.cdmjexwbzoym.us-east-1.rds.amazonaws.com
+  ? artConnection.SIQA_2504Project.project.siqa_2504.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.maximumPoolSize
+  : "10"
+  ? artConnection.SIQA_2504Project.project.siqa_2504.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.trustStore
+  : ""
+  ? artConnection.SIQA_2504Project.project.siqa_2504.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.poolIncrementSize
+  : "1"
+  ? artConnection.SIQA_2504Project.project.siqa_2504.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.expireTimeout
+  : "1000"
+  ? artConnection.SIQA_2504Project.project.siqa_2504.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.driverType
+  : Progress® DataDirect®
+  ? artConnection.SIQA_2504Project.project.siqa_2504.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.minimumPoolSize
+  : "1"
+  ? artConnection.SIQA_2504Project.project.siqa_2504.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.user
+  : JDBC_BVT
+  ? artConnection.SIQA_2504Project.project.siqa_2504.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.startupRetryCount
+  : "0"
+  ? artConnection.SIQA_2504Project.project.siqa_2504.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionEnabled
+  : "false"
+  ? artConnection.SIQA_2504Project.project.siqa_2504.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.password
+  : "{AES}gOk3wygfWVjWqDc4SLehnQ=="
+  ? artConnection.SIQA_2504Project.project.siqa_2504.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.datasourceClass
+  : com.wm.dd.jdbcx.oracle.OracleDataSource
+  ? artConnection.SIQA_2504Project.project.siqa_2504.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.transactionType
+  : LOCAL_TRANSACTION
+  ? artConnection.SIQA_2504Project.project.siqa_2504.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.networkProtocol
+  : tcp
+  ? artConnection.SIQA_2504Project.project.siqa_2504.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.poolable
+  : "false"
+  ? artConnection.SIQA_2504Project.project.siqa_2504.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.portNumber
+  : "1521"
